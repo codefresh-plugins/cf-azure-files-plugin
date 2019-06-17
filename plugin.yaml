@@ -1,0 +1,34 @@
+image: codefresh/azure_files_plugin
+tag: master
+version: 1.0.0
+description: Plugin for pushing files to Azure Files
+keywords:
+  - azure
+  - push
+  - file
+categories: 
+  - UTILITY
+sources:
+  - https://github.com/codefresh-io/cf-azure-files-plugin
+maintainers:
+  - name: Denys Voznyuk
+    email: denys@codefresh.io
+envs:
+  - name: ACCOUNT_NAME
+    type: required
+    description: Storage account name
+  - name: ACCOUNT_KEY
+    type: required
+    description: Storage account key
+  - name: SHARE_NAME
+    type: required
+    description: File share name
+  - name: PATH_TO_FILE
+    type: required
+    description: Local path to the file you are going to push
+  - name: DIRECTORY
+    type: optional
+    description: Path to directory within the file share
+  - name: ADD_TIMESTAMP
+    type: optional
+    description: Fill with some string if you need to attach time stamp to the file name
