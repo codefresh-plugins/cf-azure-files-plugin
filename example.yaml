@@ -2,7 +2,7 @@ version: '1.0'
 steps:
   pushToAzure:
     title: Pushing to Azure files
-    image: codefresh/azure_files_plugin
+    image: codefresh/cf-azure-plugin
     environment:
       - ACCOUNT_NAME=${{AZ_NAME}}
       - ACCOUNT_KEY=${{AZ_ACCOUNT_KEY}}

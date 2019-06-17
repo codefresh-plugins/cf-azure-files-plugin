@@ -1,5 +1,5 @@
 {
-  "name": "cf_azure_plugin",
+  "name": "cf-azure-plugin",
   "version": "1.0.0",
   "description": "Codefresh plugin for pushing files to Azure Files",
   "main": "src/index.js",
